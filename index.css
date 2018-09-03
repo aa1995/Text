@@ -238,14 +238,47 @@
 #last .c7{
 	width: 85%;
 	position: absolute;
-	top: 15%;
+	top: 5%;
 	left: 8%;
+	z-index: 0;
 }
+
 #last .c8{
 	width: 45%;
 	position: absolute;
 	left: 28%;
-	top: 20%;
+	top: 10%;
+	z-index: 0;
+}
+
+#last #ap {
+	width: 60%;
+	position: absolute;
+	font-size:4rem;
+	top: 25%;
+	left: 20%;
+	text-align: center;
+
+}
+
+#last #ap p{
+    font-weight: 700;
+}
+
+.pp{
+	font-size: 4rem;
+	width: 80%;
+	position: absolute;
+	bottom: 30%;
+	left: 14%;
+	color: red;
+}
+
+.gz{
+	width: 35%;
+	position: absolute;
+	bottom: 5%;
+	left: 32%;
 }
 /*最后一页结束*/
 

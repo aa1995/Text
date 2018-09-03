@@ -12,7 +12,7 @@ window.onload = function(){
      var op = document.getElementById('p');
      var ody = document.getElementById('dy');
      var oindex = document.getElementsByClassName('index')[0];
-
+     var ap = document.getElementById('ap')
 	//首页测试开始
 	 function b(){
 	 	var oxh1 = document.getElementsByClassName('qc')[0];
@@ -85,7 +85,7 @@ window.onload = function(){
 	     		aer[sum+1].style.top = hg + 'px';
 	     		This = this;
 	     		timerq = setInterval(function(){
-	     			spend = spend + 10;
+	     			spend = spend + 20;
                     touming = touming + 0.06;
                     aer[sum].style.top = Number(aer[sum].offsetTop) -spend+ 'px';
                     aer[sum].style.opacity = 1 - touming;
@@ -97,8 +97,14 @@ window.onload = function(){
                     	aer[sum+1].style.top = 0;
                     	// console.log(arr)
                     	if (arr.length >= 10) {
-                    	    zs = arr[0] + arr[1]  + arr[2] + arr[3] + arr[4] + arr[5] + arr[6] + arr[7] + arr[8] + arr[9]
-                    		console.log(zs)
+                    	    zs = arr[0] + arr[1]  + arr[2] + arr[3] + arr[4] + arr[5] + arr[6] + arr[7] + arr[8] + arr[9] + 10;
+                    		if (zs <= 23) {
+                                 ap.innerHTML =  "<p>任性妈妈（废铁级）</p>很抱歉，你是个任性的妈妈，您的健康饮食意识薄弱。如果不加以改变，会对孩子身体健康造成意想不到的后果。为了您和你家人的健康与幸福，建议您对孩子及家庭的饮食和健康做出调整，密切关注饮食健康和相关咨询，尽力改善现在的饮食状况。"
+                    		}else if (zs > 23 && zs < 31) {
+                                 ap.innerHTML = "<p>合格妈妈（白银级）</p>您是个合格的妈妈，您对饮食健康知识的了解处于中等水平。在越来越注重饮食健康的今天，您没有落伍，但还需要努力，才能更好地保持并增进健康。你需要关注饮食健康方面的信息，提高健康意识，注重改变健康饮食方式和习惯"
+                    		}else if (zs >31 && zs < 40) {
+                                 ap.innerHTML = "<p>完美妈妈（黄金级）</p>你是个完美的妈妈，很出色！能到达这个级数的人并不多，说明您有良好健康意识，非常了解如何健康地安排孩子的饮食，有高水准的饮食安全与营养方面的知识。"
+                    		}
                     	}     
                     }
 	     		},100)
