@@ -16,10 +16,10 @@ window.onload = function(){
      var oneclick = document.getElementsByClassName('yd')[0];
      var obody = document.getElementsByTagName('body')[0]
      console.log(obody.offsetWidth)
-     if (obody.offsetWidth >= 768) {
-     	 alert('请换手机')
-     	 return;
-     }
+     // if (obody.offsetWidth >= 768) {
+     // 	 alert('请换手机')
+     // 	 return;
+     // }
 	//首页测试开始
 	 function b(){
 	 	var oxh1 = document.getElementsByClassName('qc')[0];
