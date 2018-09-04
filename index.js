@@ -138,6 +138,7 @@ window.onload = function(){
 
    // 第一页点击事件开始
    oneclick.onclick = function(){
+     	clearInterval(timerq)
    	    var timerq;
      	var spend = 0;
      	var spend1 = 0;
