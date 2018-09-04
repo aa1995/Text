@@ -13,6 +13,7 @@ window.onload = function(){
      var ody = document.getElementById('dy');
      var oindex = document.getElementsByClassName('index')[0];
      var ap = document.getElementById('ap')
+     var oneclick = document.getElementsByClassName('yd')[0];
 	//首页测试开始
 	 function b(){
 	 	var oxh1 = document.getElementsByClassName('qc')[0];
@@ -57,7 +58,7 @@ window.onload = function(){
 		    },20);
 	        sun = sun + 1;
 
-	        if (sun > 3) {
+	        if (sun > 5) {
 	        	clearInterval(timer4);
 	        }
 	        // console.log(sun)
@@ -107,7 +108,7 @@ window.onload = function(){
                     		}
                     	}     
                     }
-	     		},100)
+	     		},80)
 	       	}
         }
      }
@@ -134,4 +135,28 @@ window.onload = function(){
      }
     // 第二页结束
    
+
+   // 第一页点击事件开始
+   oneclick.onclick = function(){
+   	    var timerq;
+     	var spend = 0;
+     	var spend1 = 0;
+     	var touming = 0;
+     	var hg = Number(obox.offsetHeight);
+     	oindex.style.top = hg + 'px';
+     	oindex.style.display = 'block'
+   	    timerq = setInterval(function(){
+		    spend = spend + 20;
+	        touming = touming + 0.06;
+	        oneclick.style.top = Number(oneclick.offsetTop) -spend+ 'px';
+	        oneclick.style.opacity = 1 - touming;
+	        oindex.style.top = Number(oindex.offsetTop) - spend + 'px';
+	        oindex.style.opacity = touming;
+	        if (oindex.offsetTop <= 0) { 
+	        	oindex.style.top = 0;
+	        	clearInterval(timerq)
+	        }
+	    },80)
+   }
+   // 第一页点击事件结束
 }
