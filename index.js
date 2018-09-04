@@ -162,8 +162,5 @@ window.onload = function(){
    }
    // 第一页点击事件结束
    // // 音乐控件
-   // var m = document.getElementById('mc')
-   // m.autoplay = true;
-   // 
-   var context = new AudioContext();
+  
 }
