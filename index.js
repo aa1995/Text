@@ -99,6 +99,7 @@ window.onload = function(){
                     	// console.log(arr)
                     	if (arr.length >= 10) {
                     	    zs = arr[0] + arr[1]  + arr[2] + arr[3] + arr[4] + arr[5] + arr[6] + arr[7] + arr[8] + arr[9] + 10;
+                    	    alert(zs)
                     		if (zs <= 23) {
                                  ap.innerHTML =  "<p>任性妈妈（废铁级）</p>很抱歉，你是个任性的妈妈，您的健康饮食意识薄弱。如果不加以改变，会对孩子身体健康造成意想不到的后果。为了您和你家人的健康与幸福，建议您对孩子及家庭的饮食和健康做出调整，密切关注饮食健康和相关咨询，尽力改善现在的饮食状况。"
                     		}else if (zs > 23 && zs < 32) {
